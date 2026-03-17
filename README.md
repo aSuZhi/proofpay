@@ -29,6 +29,42 @@ Client Node (8002)          Worker Node (8001)
 
 ---
 
+## OpenClaw 演示
+
+### 安装 OpenClaw
+
+```bash
+npm install -g openclaw
+```
+
+### 一键安装 ProofPay 技能
+
+```bash
+npx openclaw add https://github.com/aSuZhi/proofpay
+```
+
+### 配置环境变量
+
+```bash
+export CLIENT_PRIVATE_KEY=0x你的付款方私钥
+export WORKER_ADDRESS=0x你的Worker收款地址
+export WORKER_PRIVATE_KEY=0x你的Worker签名私钥
+```
+
+### 运行演示
+
+```bash
+# 启动完整协议（Docker 模式）
+openclaw run proofpay
+
+# 或单独运行子技能
+openclaw run bsc-defi-scraper --protocol pancakeswap
+openclaw run proof-generator --protocol pancakeswap
+openclaw run bnb-payer --to 0xWORKER_ADDRESS --amount 0.01
+```
+
+---
+
 ## 快速开始
 
 ### 前置条件
