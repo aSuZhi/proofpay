@@ -5,7 +5,7 @@ license: MIT
 metadata:
   author: proofpay
   version: "1.0.0"
-  homepage: "https://github.com/aSuZhi/-proofpay"
+  homepage: "https://github.com/aSuZhi/proofpay"
   openclaw:
     requires:
       bins: ["python"]
@@ -14,7 +14,7 @@ metadata:
 
 # SKILL: Proof Generator
 
-> **角色**：BNBTask Worker 侧证明生成技能，为 BSC DeFi 数据提供双层密码学证明。
+> **角色**：ProofPay Worker 侧证明生成技能，为 BSC DeFi 数据提供双层密码学证明。
 > **上下游**：调用 `bsc-defi-scraper` → 输出 ProofBundle → 由 Client `verifier` 验证。
 
 ---
@@ -80,7 +80,7 @@ Step 4 → 组装 ProofBundle，返回
 **Output (ProofBundle):**
 ```json
 {
-  "task_id": "bnbt-a1b2c3d4",
+  "task_id": "proofpay-a1b2c3d4",
   "data": {
     "protocol": "pancakeswap",
     "tvl_usd": 1823456789.0,

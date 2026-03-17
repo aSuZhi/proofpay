@@ -5,7 +5,7 @@ license: MIT
 metadata:
   author: proofpay
   version: "1.0.0"
-  homepage: "https://github.com/aSuZhi/-proofpay"
+  homepage: "https://github.com/aSuZhi/proofpay"
   openclaw:
     requires:
       bins: ["python"]
@@ -14,7 +14,7 @@ metadata:
 
 # SKILL: Verifier
 
-> **角色**：BNBTask Client 侧证明验证技能，对 Worker 返回的 ProofBundle 执行三层验证。
+> **角色**：ProofPay Client 侧证明验证技能，对 Worker 返回的 ProofBundle 执行三层验证。
 > **上下游**：接收 ProofBundle → 输出 VerifyResult → 触发 `bnb-payer` 支付（验证通过时）。
 
 ---
@@ -81,7 +81,7 @@ Step 5 → 返回 VerifyResult {is_valid, zk_valid, tee_valid, cross_validation}
   },
   "computed_hash": "a1b2c3d4...",
   "reason": "All checks passed",
-  "task_id": "bnbt-a1b2c3d4"
+  "task_id": "proofpay-a1b2c3d4"
 }
 ```
 

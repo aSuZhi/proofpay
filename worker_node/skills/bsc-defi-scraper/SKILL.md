@@ -5,7 +5,7 @@ license: MIT
 metadata:
   author: proofpay
   version: "1.0.0"
-  homepage: "https://github.com/aSuZhi/-proofpay"
+  homepage: "https://github.com/aSuZhi/proofpay"
   openclaw:
     requires:
       bins: ["python"]
@@ -14,7 +14,7 @@ metadata:
 
 # SKILL: BSC DeFi Scraper
 
-> **角色**：BNBTask Worker 侧数据抓取技能，从 DefiLlama 获取 BSC 生态协议 TVL 数据。
+> **角色**：ProofPay Worker 侧数据抓取技能，从 DefiLlama 获取 BSC 生态协议 TVL 数据。
 > **上下游**：独立运行 → 输出 DataResult → 由 `proof-generator` 包装成 ProofBundle。
 
 ---

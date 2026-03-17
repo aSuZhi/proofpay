@@ -5,7 +5,7 @@ license: MIT
 metadata:
   author: proofpay
   version: "1.0.0"
-  homepage: "https://github.com/aSuZhi/-proofpay"
+  homepage: "https://github.com/aSuZhi/proofpay"
   openclaw:
     requires:
       bins: ["python"]
@@ -14,7 +14,7 @@ metadata:
 
 # SKILL: BNB Payer
 
-> **角色**：BNBTask Client 侧 BSC USDT 支付技能，替代 OKX x402，直接在 BSC 链上完成支付。
+> **角色**：ProofPay Client 侧 BSC USDT 支付技能，直接在 BSC 链上完成支付。
 > **上下游**：`verifier` 验证通过 → **本技能** 执行支付 → `task-delegator` 追踪交易。
 
 ---

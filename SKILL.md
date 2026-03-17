@@ -5,7 +5,7 @@ license: MIT
 metadata:
   author: proofpay
   version: "1.0.0"
-  homepage: "https://github.com/aSuZhi/-proofpay"
+  homepage: "https://github.com/aSuZhi/proofpay"
   openclaw:
     requires:
       bins: ["docker", "python"]
@@ -21,9 +21,9 @@ metadata:
       - binance/binance-skills-hub/binance/spot
 ---
 
-# SKILL: BNBTask Protocol (Top-Level Entry Point)
+# SKILL: ProofPay Protocol (Top-Level Entry Point)
 
-> **角色**：BNBTask 一键部署入口。启动 Worker + Client 双节点，执行可验证 DeFi 数据抓取 → ZK/TEE 三层验证 → BSC USDT 链上结算的完整 C2C 流程。
+> **角色**：ProofPay 一键部署入口。启动 Worker + Client 双节点，执行可验证 DeFi 数据抓取 → ZK/TEE 三层验证 → BSC USDT 链上结算的完整 C2C 流程。
 > **子技能**：`task-delegator` · `verifier` · `bnb-payer` · `bsc-defi-scraper` · `proof-generator`
 
 ---
@@ -44,7 +44,7 @@ metadata:
 
 ```bash
 # 1. 克隆并配置
-git clone https://github.com/aSuZhi/-proofpay && cd -proofpay
+git clone https://github.com/aSuZhi/proofpay && cd proofpay
 cp .env.example .env
 # 编辑 .env，填入 CLIENT_PRIVATE_KEY 和 WORKER_ADDRESS
 

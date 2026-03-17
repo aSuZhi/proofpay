@@ -5,7 +5,7 @@ license: MIT
 metadata:
   author: proofpay
   version: "1.0.0"
-  homepage: "https://github.com/aSuZhi/-proofpay"
+  homepage: "https://github.com/aSuZhi/proofpay"
   openclaw:
     requires:
       bins: ["python"]
@@ -17,9 +17,9 @@ metadata:
       - binance/binance-skills-hub/binance/spot
 ---
 
-# SKILL: Task Delegator (BNBTask Orchestrator)
+# SKILL: Task Delegator (ProofPay Orchestrator)
 
-> **角色**：BNBTask Client 侧主编排器，协调 Worker 数据抓取、密码学验证、BSC 链上支付的完整 C2C 流程。
+> **角色**：ProofPay Client 侧主编排器，协调 Worker 数据抓取、密码学验证、BSC 链上支付的完整 C2C 流程。
 > **集成**：使用 Binance Skills Hub 官方技能进行市场数据交叉验证和资产管理。
 
 ---
@@ -129,7 +129,7 @@ metadata:
 ### Step 6 — 输出完整信任链报告
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  BNBTask 信任链报告                                       ║
+║  ProofPay 信任链报告                                      ║
 ╠══════════════════════════════════════════════════════════╣
 ║  Task ID    : {task_id}                                  ║
 ║  Protocol   : {protocol} (BSC)                           ║
