@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  worker:
+    build:
+      context: ./worker_node
+      dockerfile: Dockerfile
+    container_name: proofpay-worker
+    ports:
+      - "8001:8001"
+    environment:
+      - WORKER_PRIVATE_KEY=${WORKER_PRIVATE_KEY}
+      - WORKER_ADDRESS=${WORKER_ADDRESS}
+    restart: unless-stopped
+
+  client:
+    build:
+      context: ./client_node
+      dockerfile: Dockerfile
+    container_name: proofpay-client
+    ports:
+      - "8002:8002"
+    environment:
+      - WORKER_URL=http://worker:8001
+      - WORKER_PRIVATE_KEY=${CLIENT_PRIVATE_KEY}
+      - WORKER_ADDRESS=${WORKER_ADDRESS}
+      - BSCSCAN_API_KEY=${BSCSCAN_API_KEY}
+      - BSC_RPC=${BSC_RPC:-https://bsc-dataseed.binance.org/}
+    depends_on:
+      - worker
+    restart: unless-stopped
