@@ -79,10 +79,10 @@ def main():
     if args.json_output:
         print(json.dumps(result, indent=2))
     else:
-        status = "✓ VALID" if result["is_valid"] else "✗ INVALID"
+        status = "[VALID]" if result["is_valid"] else "[INVALID]"
         print(f"Result   : {status}")
-        print(f"ZK Layer : {'✓' if result['zk_valid'] else '✗'}")
-        print(f"TEE Layer: {'✓' if result['tee_valid'] else '✗'}")
+        print(f"ZK Layer : {'[OK]' if result['zk_valid'] else '[FAIL]'}")
+        print(f"TEE Layer: {'[OK]' if result['tee_valid'] else '[FAIL]'}")
         cv = result["cross_validation"]
         print(f"Binance  : BNB=${cv.get('bnb_price_usd')} sane={cv.get('tvl_sane')}")
         print(f"Reason   : {result['reason']}")

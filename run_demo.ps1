@@ -1,9 +1,9 @@
-# BNBTask Demo Runner
+# ProofPay Demo Runner
 # Usage: .\run_demo.ps1
 
 $ErrorActionPreference = "Stop"
 
-Write-Host "=== BNBTask Demo ===" -ForegroundColor Cyan
+Write-Host "=== ProofPay Demo ===" -ForegroundColor Cyan
 
 # Check .env exists
 if (-not (Test-Path ".env")) {

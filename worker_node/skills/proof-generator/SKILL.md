@@ -1,6 +1,6 @@
 ---
 name: proof-generator
-description: "Use this skill when the user asks to 'generate proof', 'create ProofBundle', 'add cryptographic attestation', mentions '生成证明', 'zkFetch', 'TEE证明', 'TDX attestation', '密码学证明', or when the Worker needs to attach verifiable credentials to BSC DeFi data in a C2C flow. This skill is the core of BNBTask's trust chain: it ensures data provenance via zkTLS (Reclaim Protocol) and execution environment integrity via Intel TDX TEE attestation. Do NOT use when only raw data is needed (use bsc-defi-scraper) or to verify an existing proof (use verifier)."
+description: "Use this skill when the user asks to 'generate proof', 'create ProofBundle', 'add cryptographic attestation', mentions '生成证明', 'zkFetch', 'TEE证明', 'TDX attestation', '密码学证明', or when the Worker needs to attach verifiable credentials to BSC DeFi data in a C2C flow. This skill is the core of ProofPay's trust chain: it ensures data provenance via zkTLS (Reclaim Protocol) and execution environment integrity via Intel TDX TEE attestation. Do NOT use when only raw data is needed (use bsc-defi-scraper) or to verify an existing proof (use verifier)."
 license: MIT
 metadata:
   author: proofpay
