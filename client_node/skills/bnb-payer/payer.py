@@ -122,7 +122,7 @@ def pay(private_key: str, to_address: str, amount_usdt: float) -> dict:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="BNBTask BSC USDT Payer")
+    parser = argparse.ArgumentParser(description="ProofPay BSC USDT Payer")
     parser.add_argument("--to", required=True, help="Recipient BSC address")
     parser.add_argument("--amount", type=float, default=0.01, help="USDT amount")
     parser.add_argument("--json", action="store_true", dest="json_output")

@@ -1,5 +1,5 @@
 """
-BNBTask Client Node — FastAPI service exposing task delegation and verification endpoints.
+ProofPay Client Node — FastAPI service exposing task delegation and verification endpoints.
 """
 import os
 import sys
@@ -17,7 +17,7 @@ from payer import pay
 
 WORKER_URL = os.environ.get("WORKER_URL", "http://localhost:8001")
 
-app = FastAPI(title="BNBTask Client Node", version="1.0.0")
+app = FastAPI(title="ProofPay Client Node", version="1.0.0")
 
 
 class DelegateRequest(BaseModel):

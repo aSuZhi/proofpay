@@ -1,5 +1,5 @@
 """
-BNBTask Task Delegator — Client-side orchestrator.
+ProofPay Task Delegator — Client-side orchestrator.
 Coordinates: Worker data fetch → proof verify → BSC USDT payment.
 """
 import argparse
@@ -63,7 +63,7 @@ def delegate(protocol: str = "pancakeswap", payment_amount: float = 0.01,
 
 
 def main():
-    parser = argparse.ArgumentParser(description="BNBTask Delegator")
+    parser = argparse.ArgumentParser(description="ProofPay Delegator")
     parser.add_argument("--protocol", default="pancakeswap")
     parser.add_argument("--amount", type=float, default=0.01)
     parser.add_argument("--worker-address", default="")

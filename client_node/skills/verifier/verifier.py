@@ -63,7 +63,7 @@ def verify(bundle: dict) -> dict:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="BNBTask Verifier")
+    parser = argparse.ArgumentParser(description="ProofPay Verifier")
     parser.add_argument("--file", help="Path to ProofBundle JSON file")
     parser.add_argument("--json", action="store_true", dest="json_output")
     args = parser.parse_args()

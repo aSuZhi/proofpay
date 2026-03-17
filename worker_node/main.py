@@ -1,5 +1,5 @@
 """
-BNBTask Worker Node — FastAPI service exposing task execution and health endpoints.
+ProofPay Worker Node — FastAPI service exposing task execution and health endpoints.
 """
 import os
 import sys
@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "skills", "bsc-defi-s
 
 from generator import generate_proof
 
-app = FastAPI(title="BNBTask Worker Node", version="1.0.0")
+app = FastAPI(title="ProofPay Worker Node", version="1.0.0")
 
 
 class TaskRequest(BaseModel):

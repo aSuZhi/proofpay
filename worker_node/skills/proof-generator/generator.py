@@ -64,7 +64,7 @@ def generate_proof(protocol: str) -> dict:
     tee_attestation = _generate_tee_attestation(zk_proof["hash"])
 
     return {
-        "task_id": f"bnbt-{uuid.uuid4().hex[:8]}",
+        "task_id": f"proofpay-{uuid.uuid4().hex[:8]}",
         "data": data,
         "zk_proof": zk_proof,
         "tee_attestation": tee_attestation,
@@ -74,7 +74,7 @@ def generate_proof(protocol: str) -> dict:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="BNBTask Proof Generator")
+    parser = argparse.ArgumentParser(description="ProofPay Proof Generator")
     parser.add_argument("--protocol", default="pancakeswap")
     parser.add_argument("--json", action="store_true", dest="json_output")
     args = parser.parse_args()
