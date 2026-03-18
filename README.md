@@ -29,18 +29,16 @@ Client Node (8002)          Worker Node (8001)
 
 ---
 
-## OpenClaw 演示
-
-### 安装 OpenClaw
+## OpenClaw安装ProoofPay
 
 ```bash
-npm install -g openclaw
+prompt
 ```
 
-### 一键安装 ProofPay 技能
 
 ```bash
-npx openclaw add https://github.com/aSuZhi/proofpay
+请帮我安装 proofpay 项目。项目地址是 https://github.com/aSuZhi/proofpay，
+需要克隆到工作目录并启动服务。
 ```
 
 ### 配置环境变量
